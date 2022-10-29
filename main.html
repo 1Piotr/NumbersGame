@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="name()">
+    <div id="intro">
+        <h2>Are you ready to start <span id="player-name"></span>?</h2>
+        <p class="hidden"> So you need to memorize the sequence of  random numbers,<br>
+            then when numbers disappear please input those numbers. Press start when you're ready</p>
+        <p>Please select the level:</p>
+        <form>
+            <input type="radio" name="level" value="4" checked>
+            <label >easy</label><br>
+            <input  type="radio" name="level" value="6" >
+            <label >medium</label><br>  
+            <input type="radio" name="level" value="9">
+            <label >expert</label><br><br>
+        </form>
+        <input id="btn" type="submit" onclick="myLevel(); random(); appendList(); removeIntro()" value="Start">
+    </div>
+    <div id = "container">
+        <div id="numbers" class="four"></div>
+    </div>    
+   <script src="script.js"></script>
+</body>
+</html>

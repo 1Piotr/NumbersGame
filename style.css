@@ -27,13 +27,16 @@ body {
 form {
     width:100%;
 }
+#box {
+    height:100vh;
+}
 #container, #box {
     display: flex;
     flex-direction: column;
     margin:auto;
     align-items: center;
     justify-content: center;
-    height:100%;
+   
 
     
     

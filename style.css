@@ -27,7 +27,7 @@ body {
 form {
     width:100%;
 }
-#container {
+#container, #box {
     display: flex;
     flex-direction: column;
     margin:auto;

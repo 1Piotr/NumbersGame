@@ -9,19 +9,21 @@
 </head>
 <body onload="name()">
     <div id="intro">
-        <h2>Are you ready to start <span id="player-name"></span>?</h2>
-        <p class="hidden"> So you need to memorize the sequence of  random numbers,<br>
-            then when numbers disappear please input those numbers. Press start when you're ready</p>
-        <p>Please select the level:</p>
-        <form>
-            <input type="radio" name="level" value="4" checked>
-            <label >easy</label><br>
-            <input  type="radio" name="level" value="6" >
-            <label >medium</label><br>  
-            <input type="radio" name="level" value="9">
-            <label >expert</label><br><br>
-        </form>
-        <input id="btn" type="submit" onclick="myLevel(); random(); appendList(); removeIntro()" value="Start">
+        <div>
+            <h2>Are you ready to start <span id="player-name"></span>?</h2>
+            <p class="hidden"> So you need to memorize the sequence of  random numbers,<br>
+                then when numbers disappear please input those numbers. Press start when you're ready</p>
+            <p>Please select the level:</p>
+            <form>
+                <input type="radio" name="level" value="4" checked>
+                <label >easy</label><br>
+                <input  type="radio" name="level" value="6" >
+                <label >medium</label><br>  
+                <input type="radio" name="level" value="9">
+                <label >expert</label><br><br>
+            </form>
+            <input id="btn" type="submit" onclick="myLevel(); random(); appendList(); removeIntro()" value="Start">
+        </div>
     </div>
     <div id = "container">
         <div id="numbers" class="four"></div>

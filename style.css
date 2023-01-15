@@ -27,9 +27,7 @@ body {
 form {
     width:100%;
 }
-#container, #intro {
-    height:100vh;
-}
+
 #container, #box {
     display: flex;
     flex-direction: column;
@@ -119,4 +117,9 @@ input[type="submit"] {
 #right, #result {
     font-size: 2ch;
     font-weight: bold;
+}
+@media screen and (min-width: 576px) {
+  #container, #intro {
+    height:100vh;
+}
 }

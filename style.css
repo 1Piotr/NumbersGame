@@ -27,7 +27,7 @@ body {
 form {
     width:100%;
 }
-#container {
+#container, #intro {
     height:100vh;
 }
 #container, #box {
